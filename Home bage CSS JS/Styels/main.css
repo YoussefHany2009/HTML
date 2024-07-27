@@ -1,0 +1,253 @@
+/*Ruls*/
+:root{
+    --main-color:#003285;
+    --secon-color:#f6f6f6;
+    --main-time:0.3s;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  .main-title{
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+  }
+  /*End Ruls*/
+  /*Fonts*/
+  @font-face{
+    font-family: HadingFont;
+    src: url(../wibfont/CAMPUS\ PERSONAL\ USE.ttf);
+  }
+  @font-face{
+    font-family: CardHading;
+    src: url(../wibfont/MagnisaSans-Italic.ttf);
+  }
+  /*End fonts*/
+  /*Start Header*/
+  header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  header .container h1{
+    color: var(--main-color);
+  }
+  /* Medium */
+  @media (max-width: 992px) {
+    header .container {
+      justify-content: center;
+    }
+  }
+  header .container .links a {
+    background-color: var(--main-color);
+    color: var(--secon-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 15px;
+  }
+  /*End Header*/
+  /*landing */
+  .landing {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #f1f1f1, #ccc);
+    }
+    
+    .landing .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    }
+    
+    .landing .container .text {
+    text-align: center;
+    }
+    
+    .landing .container .text h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-shadow: 2px 2px #fff;
+    }
+    
+    .landing .container .text p {
+    font-size: 18px;
+    color: #666;
+    }
+    
+    /*animations*/
+    .landing {
+    animation: fadeIn 1s ease-in-out;
+    }
+    
+    @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+    }
+    
+    .landing .container.text h2 {
+    animation: slideIn 1s ease-in-out;
+    }
+    
+    @keyframes slideIn {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    }
+    
+    .landing .container.text p {
+    animation: slideIn 1s ease-in-out 0.5s;
+    }
+    
+    @keyframes slideIn {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    }
+    
+    /*landing End*/
+    /*Start skills */
+    .skills {
+      padding: 50px 0;
+      text-align: center;
+      background-color: #f9f9f9;
+  }
+  
+  .skills .main-title {
+      font-size: 36px;
+      margin-bottom: 50px;
+      color: #333;
+      font-family: 'Arial', sans-serif;
+  }
+  
+  .skills .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+  
+  .skills .container .skill_card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .skills .container .skill_card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .skills .container .skill_card_img {
+      max-width: 100px;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease-in-out;
+  }
+  
+  .skills .container .skill_card:hover .skill_card_img {
+      transform: rotate(360deg);
+  }
+  
+  .skills .container .skill_card_h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 10px;
+      font-family: 'Arial', sans-serif;
+  }
+  
+  .skills .container .skill_card_P {
+      font-size: 16px;
+      color: #666;
+      font-family: 'Arial', sans-serif;
+  }
+  
+  /* Animation Keyframes */
+  @keyframes rotate {
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+  
+    /*End skills*/
+    .vimsg {
+      font-size: 18px;
+      font-weight: bold;
+      color: #28a745;
+  }
+  .vimsg_RED {
+    color: rgb(207, 136, 3);
+  }
+  /*Start aboutme */
+  .aboutme .text .abouttext{
+    padding: 30px;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    color: #333;
+    line-height: 1.6;
+  }
+  @media (max-width: 992px) {
+    .aboutme .text .abouttext {
+      margin-left: 0%;
+      margin-right: 0%;
+    }
+  }
+  /*End aboutme*/
